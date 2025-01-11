@@ -1,0 +1,16 @@
+{% extends 'management/base.html' %}
+
+{% block content %}
+<h2>{{ employee.name }}</h2>
+<div class="card">
+    <div class="card-body">
+        <p><strong>Email:</strong> {{ employee.email }}</p>
+        <p><strong>Mobile:</strong> {{ employee.mobile }}</p>
+        <p><strong>Department:</strong> {{ employee.department.name }}</p>
+        <p><strong>Designation:</strong> {{ employee.designation }}</p>
+        <p><strong>Hired On:</strong> {{ employee.hired_on }}</p>
+        <p><strong>Days Employed:</strong> {{ employee.days_employed }}</p>
+        <a href="{% url 'employees' %}" class="btn btn-secondary">Back</a>
+    </div>
+</div>
+{% endblock %}

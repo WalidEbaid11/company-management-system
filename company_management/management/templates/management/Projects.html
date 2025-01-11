@@ -1,0 +1,31 @@
+{% extends 'management/base.html' %}
+
+{% block content %}
+<h2>Projects</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for project in projects %}
+        <tr>
+            <td>{{ project.id }}</td>
+            <td>{{ project.name }}</td>
+            <td>{{ project.department.name }}</td>
+            <td>{{ project.start_date }}</td>
+            <td>{{ project.end_date }}</td>
+            <td>
+                <a href="{% url 'project_detail' project.id %}" class="btn btn-info btn-sm">View</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
