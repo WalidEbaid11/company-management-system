@@ -37,7 +37,7 @@ This project demonstrates proficiency in back-end development, problem-solving, 
 - **Version Control**: Git & GitHub
 
 ---
-![My Image](https://github.com/WalidEbaid11/YHealth/blob/main/Screenshot/Screenshot%202024-12-03%20104854.jpg)
+![My Image](https://github.com/WalidEbaid11/company-management-system/blob/main/company_management/management/templates/management/Screenshot%202025-01-11%20083043.jpg)
 ---
 ## Project Structure
 The project is structured as follows to facilitate development and future maintenance:
